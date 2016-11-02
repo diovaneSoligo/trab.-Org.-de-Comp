@@ -10,8 +10,8 @@ typedef struct produto PROD;
 
 /****************************************************************************************/
 //Funções
-void insereProdutos(produto estoque[]);
-int obtemquant(produto estoque[], int codigo);
+void insereProdutos(PROD estoque[]);
+int obtemquant(PROD estoque[], int codigo);
 
 /****************************************************************************************/
 //Principal
@@ -47,7 +47,7 @@ main(){
 
 /****************************************************************************************/
 //Função obtem a quantiodade de produtos no estoque (TAREFA: PASSAR ESSA FUNÇÃO PARA MIPS)
-int obtemquant(produto estoque[], int codigo){
+int obtemquant(PROD estoque[], int codigo){
 	  	int i = 0; 
   		int achou = 0; 
   		int quantidade; 
@@ -71,7 +71,7 @@ int obtemquant(produto estoque[], int codigo){
 
 /****************************************************************************************/
 //Função para inserir produtos no estoque
-void insereProdutos(produto estoque[]){
+void insereProdutos(PROD estoque[]){
 	
 	estoque[0].codigo = 1;
 	estoque[0].quantidade = 25;
